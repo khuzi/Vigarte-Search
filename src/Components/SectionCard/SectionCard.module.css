@@ -1,0 +1,73 @@
+.SectionCard {
+    border-radius: 5px;
+}
+.ItemContainer {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.ItemContainer ul{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.ItemContainer ul li {
+    padding: 0.3rem;
+    font-weight: 700;
+    color: #717e9c;
+    font-size: 14px;
+}
+
+
+.ItemContainer > *:first-child {
+    text-align: left;
+}
+
+.ItemContainer > *:last-child {
+    text-align: right;
+}
+
+.SectionCard button {
+    background-color: var(--secondary-color);
+    color: white;
+    font-size: 1rem;
+    margin-left: 5rem;
+}
+
+.BodyItem p {
+    color:gray;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.CardImg {
+    position: relative;
+}
+
+.ContentImg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: gray;
+    opacity: 0.8;
+    border-top-left-radius: 10px;
+    padding: 0 2px;
+}
+.ContentImg p {
+    margin: 0;
+    color: #fff;
+    font-size: 11px;
+}
+
+.ContentImg > *:first-child {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.SmallImg {
+    position: absolute;
+    width: 2rem;
+    top: 3%;
+    right: 2%;
+}

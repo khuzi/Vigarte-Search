@@ -1,0 +1,13 @@
+.Section3 {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: #f4f4f4;
+    grid-gap: 1rem;
+}
+
+@media(max-width: 966px) {
+    .Section3 {
+        grid-template-columns: 1fr;
+    }
+}

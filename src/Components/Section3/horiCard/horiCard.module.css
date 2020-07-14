@@ -1,0 +1,69 @@
+.HoriCard {
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    padding: 1rem;
+    background-color: #fff;
+    grid-gap: 1rem;
+    border-radius: 10px;
+    /* max-width: 40rem; */
+}
+.HoriCard li,h5{
+    margin: 0;
+}
+
+
+.UpperContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    border-bottom: 0.5px solid #eee;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.UpperContent > *:nth-child(2) {
+    font-size: 12px;
+    font-weight: 600;
+    color: gray;
+    margin: 0.5rem 0;
+}
+
+.UpperContent > *:nth-child(3) {
+    color: var(--secondary-color);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.LowerContent {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 0.5rem 0;
+}
+
+.LowerContent> *:first-child {
+    border: none;
+}
+
+.HoriCard img {
+    width: 12rem;
+    height: 10rem;
+}
+
+.Item {
+    padding-left: 1rem;
+    border-left: 1px solid #eee;
+    color: #717e9c;
+    font-weight: 600;
+}
+
+@media(max-width: 776px) {
+    .HoriCard li {
+        font-size: 10px;
+    }
+    .HoriCard h5{
+        font-size: 16px;
+    }
+    .HoriCard p {
+        font-size: 12px;
+    }
+}

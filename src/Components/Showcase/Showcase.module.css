@@ -1,0 +1,95 @@
+.Showcase {
+    position: relative;
+    background: url('../../assets/mapGraphic.png') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+}
+.ShowcaseContent {
+    margin-top: 3rem;
+    margin-left: 4rem;
+}
+
+.Showcase  h1 {
+    color: #f4f4f4;
+    font-size: 3.5rem;
+    font-weight: lighter;
+}
+
+.ShowcaseContent > *:nth-child(3) {
+    width: 5rem;
+    height: 0.3rem;
+    background: white;
+    margin-top: 2rem;
+}
+
+.TabNav {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+    0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+    flex: 0 1;
+    align-self: center;
+    position: absolute;
+    bottom: -5%;
+    background: #fff;
+}
+
+.TabNav ul {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.TabNav ul li {
+    padding: 0.5rem 4rem 0 2rem;
+    border-right: 1px solid #eee;
+}
+
+
+.TabNav ul > *:last-child {
+    border: none;
+    background-color: var(--secondary-color);
+    padding: 0 !important;
+    display: flex;
+    align-items: center;
+    width: 5rem;
+    justify-content: center;
+}
+
+.TabNav p {
+    font-size: 12px;
+    color: gray;
+}
+
+.TabNav h5 {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+@media(max-width: 996px) {
+    .ShowcaseContent h1 {
+        font-size: 30px;
+    }
+    .TabNav ul li {
+        padding: 0.5rem 1rem 0 1rem;
+    }
+}
+
+@media(max-width: 768px) {
+    .TabNav ul > *:first-child {
+        display: none;
+    }
+    .TabNav h5 {
+        font-size: 15px;
+        padding-bottom: 0.2rem;
+    }
+    .TabNav ul li {
+        padding: 0.5rem 1rem 0 0rem;
+    }
+}
+
+
+@media(max-width: 600px) {
+    .TabNav ul > *:nth-child(2) {
+        display: none;
+    }
+}
